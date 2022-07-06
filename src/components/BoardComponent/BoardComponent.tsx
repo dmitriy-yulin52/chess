@@ -19,8 +19,7 @@ export const BoardComponent: FC<BoardComponentProps> = memo((props): ReactElemen
         if (selectedCell && selectedCell !== cell && selectedCell.figure?.canMove(cell)) {
             selectedCell.moveFigure(cell);
             setSelectedCell(null);
-        }
-        if (cell.figure) {
+        }else {
             setSelectedCell(cell)
         }
     }, [setSelectedCell, selectedCell])

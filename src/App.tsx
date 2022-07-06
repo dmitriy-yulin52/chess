@@ -18,11 +18,11 @@ function App() {
         newBoard.initCells();
         newBoard.addFigures()
         setBoard(newBoard)
-    }, [setBoard])
+    }, [setBoard, board])
 
-    const onClickSetBoard = useCallback((board:Board)=>{
+    const onClickSetBoard = useCallback((board: Board) => {
         setBoard(board)
-    },[setBoard])
+    }, [setBoard])
 
 
     return (

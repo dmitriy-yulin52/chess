@@ -15,7 +15,7 @@ export const CellComponent: FC<CellComponentProps> = memo((props: CellComponentP
 
     const onClickHandler = useCallback(() => {
         onSelectedCell(cell)
-    }, [onSelectedCell])
+    }, [onSelectedCell,cell])
 
     return (
         <div
